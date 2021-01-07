@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"usart_with_it\startup_stm32f103xe.o"
+"usart_with_it\main.o"
+"usart_with_it\stm32f1xx_it.o"
+"usart_with_it\stm32f1xx_hal_msp.o"
+"usart_with_it\stmflash.o"
+"usart_with_it\sys.o"
+"usart_with_it\stm32f1xx_hal_gpio_ex.o"
+"usart_with_it\stm32f1xx_hal_tim.o"
+"usart_with_it\stm32f1xx_hal_tim_ex.o"
+"usart_with_it\stm32f1xx_hal_uart.o"
+"usart_with_it\stm32f1xx_hal.o"
+"usart_with_it\stm32f1xx_hal_rcc.o"
+"usart_with_it\stm32f1xx_hal_rcc_ex.o"
+"usart_with_it\stm32f1xx_hal_gpio.o"
+"usart_with_it\stm32f1xx_hal_dma.o"
+"usart_with_it\stm32f1xx_hal_cortex.o"
+"usart_with_it\stm32f1xx_hal_pwr.o"
+"usart_with_it\stm32f1xx_hal_flash.o"
+"usart_with_it\stm32f1xx_hal_flash_ex.o"
+"usart_with_it\stm32f1xx_hal_exti.o"
+"usart_with_it\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "usart_with_it\usart_with_it.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "usart_with_it.map" -o usart_with_it\usart_with_it.axf
